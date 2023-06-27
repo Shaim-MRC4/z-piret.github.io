@@ -3,22 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <script src="./counter.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Z Pirate CTF 2023</title>
-    <style type="text/css">
-
-
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="headerlogo">
-                <a href="#"><img src="./header_logo.png" alt="web logo" title="logo
-                    
-                    " height="160" width="160"></a>
+                <a href="#"><img src="/Project-1/header_logo.png" alt="" height="160" width="160"></a>
             </div>
             <div class="menu">
                 <a href="#">Scoreboard</a>
@@ -57,6 +50,33 @@
         <p>uhhandavangmama...</p>
         </div>
     </header>
+
+
+
+
+
+
+
+
+
+<script>
+    var countDownDate = new Date("Oct 19, 2023 00:00:00").getTime();
+    var x = setInterval(function(){
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+document.getElementById("days").innerHTML = days;
+document.getElementById("hours").innerHTML = hours;
+document.getElementById("minutes").innerHTML = minutes;
+document.getElementById("seconds").innerHTML = seconds;
+
+},1000);
+</script>
 
 
 
