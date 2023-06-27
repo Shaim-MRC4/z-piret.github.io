@@ -2,9 +2,9 @@
 header{
     width: 100%;
     height: 100vh;
-    background:linear-gradient(rgba(0,0,0,0.4),rgba(0, 0, 0, 0)), url('./home_bg.jpg');
+    background:linear-gradient(rgba(0,0,0,0.4),rgba(0, 0, 0, 0)), url('/Project-1/home_bg.jpg');
     background-size: cover;
-    font-family: sans-serif;
+    font-family: "Lores", sans-serif;
 }
 nav{
     width: 100%;
@@ -15,8 +15,8 @@ nav{
     align-items: center;
 }
 .menu a{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-family: "Lores", sans-serif;
+    font-size: 24px;
     text-decoration: none;
     color: rgb(255, 255, 255);
     padding: 10px 22px;
@@ -36,9 +36,9 @@ nav{
     width: 90%;
 }
 .regis a{
-    font-size: 20px;
+    font-size: 24px;
     text-decoration: none;
-    color: aliceblue;
+    color: hsl(180, 100%, 50%);
     padding: 20px 8px;
     position: relative;
 }
@@ -49,22 +49,20 @@ nav{
     left: 0%;
     width: 0%;
     height: 100%;
-    border-bottom: 3px solid rgb(191, 191, 191);
+    border-bottom: 3px solid rgb(0, 200, 255);
     transition: 0.2s linear;
 }
 .regis a:hover:before{
     width: 90%;
 }
-.poweredby {
-    color: aliceblue;
-}
 
 
 .counter{
-    color: aliceblue;
+    font-family: "Lores", sans-serif;
+    color: rgb(0, 136, 255);
     display: flex;
     width: 100%;
-    height: 50vh;
+    height: 20vh;
 }
 .counter div{
     font-size: large;
@@ -76,12 +74,17 @@ nav{
 }
 
 .words p{
-    color: aqua;
-    font-size: 32px;
-    font-family: fantasy;
+    font-family: "Lores", sans-serif;
+    color: hsl(180, 100%, 50%);
+    font-size: 34px;
     text-align: center;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
     animation: typing 2s steps(41), cursor .4s step-end infinite alternate;
+}
+
+@font-face {
+    font-family: "Lores";
+    src: url(./LoRes12OTAltOakland-Bold.ttf);
 }
